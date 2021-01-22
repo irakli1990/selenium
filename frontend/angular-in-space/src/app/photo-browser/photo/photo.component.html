@@ -1,0 +1,14 @@
+<app-photo-form (formData)="send($event)"></app-photo-form>
+
+<ng-container *ngIf="photos.length > 0; else noItem">
+    <ul *ngFor="let item of photos" class="images">
+        <li>
+            <img class="img-fluid" [src]="item.url_l" alt="Card image cap" />
+        </li>
+    </ul>
+</ng-container>
+<ng-template #noItem>
+    <div>
+        <p>Item is not present!</p>
+    </div>
+</ng-template>

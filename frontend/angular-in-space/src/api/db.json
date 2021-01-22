@@ -1,0 +1,39 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "firstName": "Adia",
+      "lastName": "Galia",
+      "imageUrl": "/assets/Adi-Galia.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Luke",
+      "lastName": "Skywalker",
+      "imageUrl": "/assets/Luke-Skywalker.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Karl",
+      "lastName": "Ahathon",
+      "imageUrl": "/assets/unknown-pilot.png"
+    },
+    {
+      "id": 4,
+      "firstName": "Anikin",
+      "lastName": "Skywalker",
+      "imageUrl": "/assets/unknown-pilot.png"
+    }
+  ],
+  "forbidden-names": [
+    {
+      "name": "Maruda"
+    },
+    {
+      "name": "Ciamajda"
+    },
+    {
+      "name": "Gapcio"
+    }
+  ]
+}

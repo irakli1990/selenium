@@ -1,0 +1,15 @@
+nav {
+  text-align: center;
+  margin: 50px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: darkorange;
+}

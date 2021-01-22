@@ -1,0 +1,60 @@
+h1 {
+  margin-bottom: 4px;
+}
+.game {
+  border: 2px solid #ff8c00;
+  cursor: crosshair;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 230px);
+}
+hr {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  border: 2px dashed #ff8c00;
+}
+hr.vertical {
+  margin-left: -50%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.noise,
+.surface {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.noise {
+  background-color: red;
+  background-repeat: repeat;
+}
+.planet {
+  background-image: url(/assets/planet.png);
+  margin: -15px 0 0 -15px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+.detected-message {
+  border: 2px dashed #ff8c00;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ff8c00;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: calc(50% - 150px);
+  top: calc(50% - 42px);
+  height: 24px;
+  width: 240px;
+}
+.surface {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+<form [formGroup]="form" (ngSubmit)="send()">
+    <div class="control-group">
+        <label class="control-label">Apikey:</label>
+        <input type="text" formControlName="apiKey" />
+        <!-- dla apikey -->
+        <span
+            *ngIf="
+                form.get('apiKey').hasError('required') &&
+                form.get('apiKey').touched
+            "
+            class="error"
+        >
+            podaj wartość
+        </span>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">User ID</label>
+        <input type="text" formControlName="userId" />
+        <!-- dla userId -->
+        <span *ngIf="form.get('userId').hasError('userId')" class="error">
+            podaj wartość
+        </span>
+    </div>
+
+    <!-- -->
+    <button type="submit" [disabled]="form.invalid">hack!</button>
+</form>

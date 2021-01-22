@@ -1,0 +1,16 @@
+<div
+    #gameElement
+    class="game"
+    (mousemove)="update({ x: $event?.offsetX, y: $event?.offsetY })"
+>
+    <div
+        class="planet"
+        [style.left.px]="targetPosition?.x"
+        [style.top.px]="targetPosition?.y"
+    ></div>
+    <div class="noise" appOpacity [distance]="distance"></div>
+    <hr class="vertical" [style.left.px]="currentPosition?.x" />
+    <hr class="horizontal" [style.top.px]="currentPosition?.y" />
+    <div class="surface"></div>
+</div>
+{{ distance }}

@@ -1,0 +1,44 @@
+<form [formGroup]="form" (ngSubmit)="checkCode()">
+    <div class="control-group">
+        <label class="control-label">Kod:</label>
+        <input type="text" formControlName="code" />
+        <!-- dla apikey -->
+        <ul>
+            <li>
+                <span
+                    *ngIf="
+                        form.get('code').hasError('required') &&
+                        form.get('code').touched
+                    "
+                    class="error"
+                >
+                    Pole nie może być pusty
+                </span>
+            </li>
+            <li>
+                <span
+                    *ngIf="
+                        form.get('code').hasError('containsDigit') &&
+                        form.get('code').touched
+                    "
+                    class="error"
+                >
+                    może zawierać tylko cifry od 0 do 6
+                </span>
+            </li>
+            <li>
+                <span
+                    *ngIf="
+                        form.get('code').hasError('wordsLimit') &&
+                        form.get('code').touched
+                    "
+                    class="error"
+                >
+                    Limit znaków to 4
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!-- -->
+    <button type="submit" [disabled]="form.invalid">hack!</button>
+</form>

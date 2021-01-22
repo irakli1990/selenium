@@ -1,0 +1,11 @@
+li {
+  display: block;
+  float: left;
+  width: 300px; /* adjust */
+  height: 150px; /* adjust */
+  padding: 5px; /*adjust*/
+}
+li img {
+  width: 200px;
+  height: 150px;
+}
